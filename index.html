@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson10_page1</title>
+</head>
+
+<!-- В коментах буду записувати логіку застосування класів. І мені корисно проговорити, і Вам, менторам, зручніше перевіряти-->
+
+<body>
+	<!-- всюди намагаюся вказувати header,main,footer+обмежуючий контейнер, хоч розумію, що саме в цьому прикладі не зовсім портібно-->
+	<header></header>
+	<main>
+		<!-- обмежуючий контейнер для сторінки-->
+		<div class="page__container">
+			<!-- поділ сторінки на три складові: "about", "courses", "benefits"-->
+			<div class="page__about">
+				<!-- тепер підуть елементи блоку "about"-->
+				<div class="about__image">
+					<img src="img/img_girl.webp" alt="student">
+				</div>
+				<!--подвійний клас для зверення як до about__heading так і до heading, яке однакове у всіх 3 складових-->
+				<div class="about__heading heading">
+					<h3>Who we are</h3>
+					<h2>Why Createx?</h2>
+					<ul class="about__list">
+						<li>A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+						<li>Vulputate placerat amet pulvinar lorem nisl.</li>
+						<li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+						<li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+						<li>Tincidunt sagittis neque sem ac eget.</li>
+						<li>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+					</ul>
+					<div class="about__link">
+						<a href="">More about us</a>
+					</div>
+				</div>
+			</div>
+			<div class="page__courses">
+				<!-- тепер підуть елементи блоку "courses"-->
+				<div class="courses__heading heading">
+					<h3>Ready to learn?</h3>
+					<h2>Featured Courses</h2>
+				</div>
+				<div class="courses__link">
+					<a href="">View all courses</a>
+				</div>
+				<!--div для стилізації всього контейнеру з викладачами-->
+				<div class="courses__card">
+					<!--div для стилізації кожного окремого контейнеру з викладача, який з часом буде змінюватися-->
+					<div class="courses__teacher-first">
+						<img src="img/card_1.webp" alt="">
+						<h5>Marketing</h5>
+						<h3>The Ultimate Google Ads Training Course</h3>
+						<h4>$100 | <span>by Jerome Bell</span></h4>
+					</div>
+					<div class="courses__teacher-second">
+						<img src="img/card_2.webp" alt="">
+						<h5>HR & Recruting</h5>
+						<h3>THR Management and Analytics</h3>
+						<h4>$200 | <span>by Leslie Alexander Li</span></h4>
+					</div>
+					<div class="courses__teacher-third">
+						<img src="img/card_3.webp" alt="">
+						<h5>Management</h5>
+						<h3>Business Development Management</h3>
+						<h4>$400 | <span>by Dianne Russell</span></h4>
+					</div>
+					<div class="courses__teacher-four">
+						<img src="img/card_4.webp" alt="">
+						<h5>Management</h5>
+						<h3>Prduct Management Fundamentals</h3>
+						<h4>$480 | <span>by Marvin McKinney</span></h4>
+					</div>
+					<div class="courses__teacher-fifth">
+						<img src="img/card_5.webp" alt="">
+						<h5>Marketing</h5>
+						<h3>Brand Management & PR Communications</h3>
+						<h4>$530 | <span>by Kristin Watson</span></h4>
+					</div>
+					<div class="courses__teacher-six">
+						<img src="img/card_6.webp" alt="">
+						<h5>Design</h5>
+						<h3>Graphic Design Basic</h3>
+						<h4>$550 | <span>by Guy Hawkins</span></h4>
+					</div>
+				</div>
+			</div>
+			<div class="page__benefits">
+				<!-- тепер підуть елементи блоку "benefits"-->
+				<div class="benefits__heading heading">
+					<h3>Our benefits</h3>
+					<h2>That’s how we do it</h2>
+				</div>
+				<!--лише назви. Іконки додаватимуться ::before. Перший li червоним колором теж через first-child (не span) -->
+				<ul class='benefits_list'>
+					<li>Experienced Tutors</li>
+					<li>Feedback & Support</li>
+					<li>24/7 Online Library</li>
+					<li>Community</li>
+				</ul>
+				<div class="benefit__text">
+					<h2>Only practicing tutors</h2>
+					<p>Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.</p>
+				</div>
+
+				<!--ілюстрацію взяв вцілому, а не кожен елемент окремо. Думаю, що правильно, оскільки якщо буде вподальшому замінюватися, то вся одночасно, а не по-елементно  -->
+				<div class="illustration">
+					<img src="img/illustration.svg" alt="">
+				</div>
+			</div>
+
+		</div>
+
+
+		
+
+	</main>
+	<footer></footer>
+</body>
+
+</html>
